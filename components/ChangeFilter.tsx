@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from "../app/hook";
+import { useAppDispatch, useAppSelector } from "../lib/hooks";
 import { setFilter } from "../features/configSlice";
 
 const ChangeFilter = () => {

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { TaskIn } from "../@types/Task";
-import { useAppDispatch, useAppSelector } from "../app/hook";
+import { useAppDispatch, useAppSelector } from "../lib/hooks";
 import { setEditKey } from "../features/configSlice";
 import { useAppFunctions } from "../lib/hooks";
 import TaskNameProps from "./TaskNameProps";
