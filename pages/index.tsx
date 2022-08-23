@@ -1,16 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useContext } from "react";
 import Login from "../components/Login";
 import TODOLIST from "../components/TODOLIST";
-import { UserContext } from "../lib/context";
+import { auth } from "../lib/firebase";
 import { useGetData } from "../lib/hooks";
 
 const ToDoList: NextPage = () => {
-    const { user } = useContext(UserContext);
     useGetData();
-
-    if (!user) return <Login />;
+    
+    if (!auth.currentUser) return <Login />;
 
     return (
         <>
