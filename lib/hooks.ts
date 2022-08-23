@@ -110,7 +110,7 @@ export const useGetData = () => {
             }
         };
         sync();
-    }, [user]);
+    }, [user,dispatch]);
 };
 
 // Set, Update and Delete Data to Firebase
