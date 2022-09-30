@@ -17,7 +17,7 @@ const ToDoList = () => {
     const { todoAdded } = useAppFunctions();
 
     return (
-        <div className="flex flex-col items-center bg-slate-900/70 rounded-xl shadow-xl p-8 gap-8 w-[35rem] mt-16 border border-slate-50/20">
+        <div className="flex flex-col items-center bg-slate-900/70 rounded-xl shadow-xl p-8 gap-8 w-full max-w-[35rem] mt-16 border border-slate-50/20">
             {/* Heading */}
             <h2 className="text-3xl">
                 {auth.currentUser ? `${auth.currentUser?.displayName}'s` : ""}{" "}
